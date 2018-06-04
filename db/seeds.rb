@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+todo = Todo.create([
+    {title: 'Clean up dodo', body: 'Mother fucking rails', done: false},
+    {title: 'Hello World', body: 'World is fucking hot now', done: false},
+    {title: 'Bye World', body: 'Good bye amigos', done: false}
+])

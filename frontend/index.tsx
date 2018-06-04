@@ -2,6 +2,7 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import Todo from './tsx-components/todo';
 import Navigation from './jsx-components/navigation';
+import '../app/assets/stylesheets/index.scss';
 
 const num1: number = 1;
 const num2: number = 2;

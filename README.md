@@ -3,7 +3,7 @@
 `rails new ___`
 `bundle install` -> gems
 Create static controller/routes/html
-`rails generate ____ ____` (controller/model/migration)
+`rails generate ____ ____` (controller/model/migration) *use migrate if you want to add or delete otherwise use model
 `npm init`
 `npm install --save react react-dom ts-loader typescript webpack webpack-cli @types/react @types/react-dom`
 
@@ -61,3 +61,27 @@ create .babelrc file
 add `{ test: /\.jsx?$/, loader: "babel-loader" }` to webpack
 
 when you create jsx files you need to create a d.ts file for declaring variables
+
+start server
+`rails s`
+
+build webpack
+`npm run build:watch`
+
+setup db
+use generate model command (singular) **read notes
+use generate controller command (plural)
+create seeds
+fill modal and migration
+Run bundle exec rails db:create. rake db:create
+Run bundle exec rails db:migrate. rake db:migrate
+Run bundle exec rails db:seed. rake db:seed
+
+fill controller
+create routes for controller methods
+
+async and await
+
+css
+npm install --save css-loader node-sass sass-loader style-loader
+add to webpack `{ test: /\.scss?$/, use: ["style-loader", "css-loader", "sass-loader"] }`
